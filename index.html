@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Números Claros: kit de planillas para vender en Argentina</title>
+<meta name="description" content="Seis planillas para Google Sheets y Excel: precio con inflación, costos y margen, comisiones de Mercado Libre y Mercado Pago, cuotas, punto de equilibrio y tope de monotributo.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:image" content="assets/cover.png">
+<!-- No publicado. Nombre y precio aprobados por Jota el 26/10/2026. -->
+<style>
+  :root{--ink:#16202c;--muted:#5a6676;--line:#dde3ea;--bg:#ffffff;--soft:#f5f7fa;--accent:#1f5fbf;--accent-ink:#ffffff;--yellow:#fff4c2;--calc:#e8eef4}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+  header{border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding-top:16px;padding-bottom:16px}
+  .brand{font-weight:700;font-size:18px}
+  nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:15px}
+  .hero{padding:64px 0 48px}
+  .hero h1{font-size:40px;line-height:1.15;margin:0 0 16px;max-width:760px}
+  .hero p.lead{font-size:19px;color:var(--muted);max-width:680px;margin:0 0 28px}
+  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:14px 22px;border-radius:10px;text-decoration:none;font-weight:600}
+  .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent);margin-left:10px}
+  .note{font-size:14px;color:var(--muted);margin-top:14px}
+  section{padding:48px 0;border-top:1px solid var(--line)}
+  h2{font-size:28px;margin:0 0 20px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+  .card{border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--bg)}
+  .card h3{margin:0 0 8px;font-size:18px}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  .num{display:inline-block;font-size:13px;font-weight:700;color:var(--accent);margin-bottom:6px}
+  table.demo{border-collapse:collapse;width:100%;max-width:640px;font-size:15px}
+  table.demo td{border:1px solid var(--line);padding:8px 12px}
+  table.demo td:last-child{text-align:right;font-variant-numeric:tabular-nums}
+  td.in{background:var(--yellow)} td.calc{background:var(--calc)}
+  tr.total td{font-weight:700}
+  .two{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:28px}
+  ul.clean{padding-left:20px;margin:0} ul.clean li{margin:6px 0}
+  .price{border:1px solid var(--line);border-radius:16px;padding:28px;max-width:520px;background:var(--soft)}
+  .price .amount{font-size:36px;font-weight:700;margin:6px 0}
+  details{border-bottom:1px solid var(--line);padding:14px 0}
+  summary{cursor:pointer;font-weight:600}
+  details p{color:var(--muted);margin:10px 0 0}
+  footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:14px}
+  footer a{color:var(--muted)}
+  @media (max-width:600px){.hero h1{font-size:30px}.btn.ghost{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <div class="brand">Números Claros</div>
+  <nav><a href="#incluye">Qué incluye</a><a href="#ejemplo">Ejemplo</a><a href="#precio">Precio</a><a href="#faq">Preguntas</a></nav>
+</div></header>
+
+<main>
+<div class="wrap hero">
+  <h1>Sabé cuánto te queda de cada venta, con inflación, comisiones y monotributo incluidos.</h1>
+  <p class="lead">Seis planillas para Google Sheets y Excel, pensadas para quien vende en Argentina: por Mercado Libre, con link de Mercado Pago, en tu tienda online o en persona. Cargás tus números y las fórmulas hacen el resto.</p>
+  <a class="btn" href="{{PAYHIP_CHECKOUT_URL}}">Comprar el kit</a>
+  <a class="btn ghost" href="#incluye">Ver qué incluye</a>
+  <p class="note">Pago único. Descarga inmediata de las planillas y el manual en PDF. Funciona en Google Sheets (gratis), Excel y LibreOffice.</p>
+</div>
+
+<section id="incluye"><div class="wrap">
+  <h2>Qué incluye</h2>
+  <div class="grid">
+    <div class="card"><span class="num">01</span><h3>Precio con inflación y reposición</h3><p>Calcula a cuánto vender para poder volver a comprar la mercadería y conservar tu margen. Te marca qué productos conviene actualizar.</p></div>
+    <div class="card"><span class="num">02</span><h3>Costos y margen</h3><p>Insumos, mano de obra, packaging y la parte de los gastos fijos de cada unidad. Muestra margen, markup y precio para el margen que buscás.</p></div>
+    <div class="card"><span class="num">03</span><h3>Comisiones de Mercado Libre y Mercado Pago</h3><p>Comisión por categoría, costo fijo de productos baratos, cuotas sin interés, IVA y envío. También te dice a qué precio publicar para ganar lo que querés.</p></div>
+    <div class="card"><span class="num">04</span><h3>Cuotas y financiación</h3><p>Cuánto recargar para ofrecer cuotas sin perder plata, y si te conviene pagar en cuotas o de contado una compra grande.</p></div>
+    <div class="card"><span class="num">05</span><h3>Punto de equilibrio</h3><p>Cuántas unidades y cuánta facturación necesitás por mes para cubrir tus gastos fijos y llegar a tu objetivo, con varios productos.</p></div>
+    <div class="card"><span class="num">06</span><h3>Control del tope de monotributo</h3><p>Suma tus últimos 12 meses, te avisa cuando te acercás al tope y te muestra qué categoría te correspondería, con la tabla de ARCA vigente desde el 01/08/2026.</p></div>
+  </div>
+</div></section>
+
+<section id="ejemplo"><div class="wrap two">
+  <div>
+    <h2>Un ejemplo con números</h2>
+    <p>Una venta de $50.000 en Mercado Libre, publicación con cuotas, categoría indumentaria, 3 cuotas sin interés y $3.500 de envío a tu cargo. Las celdas amarillas las completás vos; las grises se calculan solas.</p>
+    <p class="note">Ejemplo ilustrativo con las tarifas de referencia cargadas el 26/10/2026. Tus comisiones exactas dependen de tu categoría y las ves en tu cuenta de Mercado Libre.</p>
+  </div>
+  <table class="demo" aria-label="Ejemplo de cálculo">
+    <tr><td class="in">Precio de venta</td><td class="in">$50.000</td></tr>
+    <tr><td class="calc">Comisión (17,14%)</td><td class="calc">−$8.570</td></tr>
+    <tr><td class="calc">Cuotas sin interés (5,75%)</td><td class="calc">−$2.875</td></tr>
+    <tr><td class="calc">IVA sobre cargos (21%)</td><td class="calc">−$2.403</td></tr>
+    <tr><td class="in">Envío a tu cargo</td><td class="in">−$3.500</td></tr>
+    <tr class="total"><td class="calc">Te queda</td><td class="calc">$32.652</td></tr>
+  </table>
+</div></section>
+
+<section><div class="wrap two">
+  <div>
+    <h2>Para quién es</h2>
+    <ul class="clean">
+      <li>Emprendedores y pymes que venden productos en Argentina.</li>
+      <li>Vendedores de Mercado Libre o con tienda online que cobran con Mercado Pago.</li>
+      <li>Monotributistas que quieren seguir su facturación mes a mes.</li>
+    </ul>
+  </div>
+  <div>
+    <h2>Para quién no es</h2>
+    <ul class="clean">
+      <li>Si buscás un sistema de facturación o de stock: esto son planillas de cálculo.</li>
+      <li>Si necesitás asesoramiento contable: el kit no reemplaza a tu contador.</li>
+      <li>Si sos responsable inscripto: el módulo de monotributo no aplica a tu caso.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="precio"><div class="wrap">
+  <h2>Precio</h2>
+  <div class="price">
+    <div>Kit completo: 6 planillas + manual de uso en PDF</div>
+    <div class="amount">$14.900</div>
+    <div class="note" style="margin-top:0">Pago único en pesos con Mercado Pago (tarjeta de crédito o débito). No necesitás cuenta de Mercado Pago.</div>
+    <p><a class="btn" href="{{PAYHIP_CHECKOUT_URL}}">Comprar el kit</a></p>
+    <!-- Política de arrepentimiento de 10 días PENDIENTE de aprobación de Jota -->
+    <div class="note">Tenés 10 días corridos desde la compra para arrepentirte y pedir el reembolso total, sin dar motivos.</div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <h2>Preguntas frecuentes</h2>
+  <details><summary>¿Necesito tener Excel?</summary><p>No. Funciona en Google Sheets, que es gratis: subís el archivo a Drive y lo abrís como hoja de cálculo. También funciona en Excel y LibreOffice.</p></details>
+  <details><summary>¿Las comisiones están actualizadas?</summary><p>Las tarifas se cargaron el 26/10/2026 a partir de las fuentes que se citan en cada archivo. Están todas en una pestaña editable: si Mercado Libre o Mercado Pago cambian sus costos, cambiás ese valor y se recalcula todo.</p></details>
+  <details><summary>¿Sirve si no vendo en Mercado Libre?</summary><p>Sí. Los módulos de precios, costos, cuotas, punto de equilibrio y monotributo sirven para cualquier canal de venta.</p></details>
+  <details><summary>¿Reemplaza a mi contador?</summary><p>No. Es una herramienta de cálculo y seguimiento. Las decisiones fiscales, como la recategorización, confirmalas con tu contador.</p></details>
+  <details><summary>¿Cómo lo recibo?</summary><p>Apenas se aprueba el pago, Payhip te muestra el link de descarga y te lo manda por email: las 6 planillas y el manual en PDF.</p></details>
+  <details><summary>¿Me puedo arrepentir?</summary><p>Sí. Dentro de los 10 días corridos desde la compra, tocá “Botón de arrepentimiento” al pie de esta página o escribinos, y te devolvemos el total por el mismo medio de pago.</p></details>
+  <details><summary>¿Puedo compartirlo?</summary><p>La compra es para tu uso y el de tu negocio. Por favor, no lo revendas ni lo publiques.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p>Números Claros. Planillas de cálculo para emprendedores. No es asesoramiento contable, fiscal ni financiero. Los resultados dependen de los datos que cargues.</p>
+  <p><a href="{{URL_BOTON_ARREPENTIMIENTO}}">Botón de arrepentimiento</a> · <a href="mailto:{{EMAIL_CONTACTO}}">Contacto</a> · Titular: {{NOMBRE_Y_CUIT_DEL_TITULAR}}</p>
+</div></footer>
+</body>
+</html>
